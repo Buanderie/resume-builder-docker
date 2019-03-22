@@ -17,6 +17,6 @@ RUN apt-get update -y \
 # RUN cabal update && cabal install pandoc-${PANDOC_VERSION}
 
 WORKDIR /workspace
-# ENTRYPOINT ["/bin/bash"]
+ENTRYPOINT ["/bin/bash"]
 
 # CMD ["--help"]
