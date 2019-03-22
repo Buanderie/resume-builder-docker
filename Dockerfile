@@ -7,7 +7,8 @@ RUN apt-get update -y \
   && apt-get install -y -o Acquire::Retries=10 --no-install-recommends \
     pandoc \
     phantomjs \
-    git
+    git \
+    make
 
 # will ease up the update process
 # updating this env variable will trigger the automatic build of the Docker image
