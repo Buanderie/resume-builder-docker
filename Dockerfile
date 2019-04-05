@@ -17,6 +17,8 @@ RUN apt-get update -y \
 # install pandoc
 # RUN cabal update && cabal install pandoc-${PANDOC_VERSION}
 
+ENV QT_QPA_PLATFORM=offscreen
+
 WORKDIR /workspace
 ENTRYPOINT ["/bin/bash"]
 
